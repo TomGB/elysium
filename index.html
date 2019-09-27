@@ -1,128 +1,60 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<style>
-    * {
-        font-family: 'Roboto', serif;
-        box-sizing: border-box;
-    }
-    body {
-        margin: 0px;
-        text-align: center;
-    }
-    .contain{
-        width: 100%;
-        max-width: 78.125rem;
-        display: inline-block;
-        text-align: left;
-    }
-    #header {
-        padding: 10px;
-        height: 80px;
-        text-align: center;
-        display: block;
-    }
-    #title {
-        float: left;
-    }
-    #header h1 {
-        margin: 0px;
-        padding: 15px
-    }
-    #header nav {
-        float: right;
-        text-align: right;
-    }
-    #header nav a {
-        padding: 20px;
-        height: 60px;
-        display: inline-block;
-    }
-    #hero {
-        padding-top: 30px;
-        width: 100%;
-        height: 280px;
-        text-align: center;
-        background-image: url('./assets/background.jpg');
-        background-size: cover;
-        background-position: center bottom; 
-    }
-    #hero p{
-        color: white;
-        text-align: left;
-        font-size: 30px;
-        font-weight: bold;
-    }
-    #hero p:nth-child(1) {
-        padding-left: 50px
-    }
-    #hero p:nth-child(2) {
-        padding-left: 100px
-    }
-    #hero p:nth-child(3) {
-        padding-left: 150px
-    }
-    #about {
-        text-align: center;
-        margin: 20px;
-    }
-    #about h2, #about p {
-        padding-left: 0.9375rem
-    }
-    #classes nav {
-        width: 100%;
-    }
-    #classes nav a {
-        display: inline-block;
-        width: 33%;
-        height: 200px;
-    }
-    #footer {
-        color: white;
-        width: 100%;
-        background-color: black;
-        padding: 20px;
-    }
-    #footer > div > div {
-        width: 33%;
-        display: inline-block;
-
-    }
-</style>
+<link href='./style.css'  rel="stylesheet" type="text/css" />
 <section id='header'>
     <div class='contain'>
         <div id='title'>
-            <h1>Elysium Studios</h1>
+            <a href='./'><h1>Elysium Studios</h1></a>
         </div>
-        <nav><a>Welcome</a><a>Classes</a><a>About</a><a>Contact</a></nav>
+        <nav>
+            <a href='./' class='active'>Welcome</a>
+            <a href='./studio-hire'>Studio Hire</a>
+            <a href='./gallery'>Gallery</a>
+            <a href='./contact'>Contact</a>
+        </nav>
         <div style='clear: both;'></div>
     </div>
 </section>
 <section id='hero'>
     <div class='contain'>
-        <p>Learn skills</p>
-        <p>Be inspired</p>
-        <p>Get in shape</p>
+        <p>Welcome to Elysium, a Huddersfield based aerial skills and pole dancing studio.</p>
+        <p>Our classes are tailored for all levels and abilities. From complete beginners to advanced.</p>
+        <p>Most importantly we focuss on making our classes enjoyable for all.</p>
     </div>
 </section>
-<section id='about'>
+<section id='classes'>
     <div class='contain'>
-    <h2>Welcome to Elysium, a Huddersfield based aerial skills and pole dancing studio.</h2>
-    <p>We have classes tailored for complete beginners up to advanced.</p>
-    <p>Most importantly we focuss on making our classes enjoyable for all.</p>
+        <article class='class'>
+            <div id='hoop-image'></div>
+            <div class='info'>
+                <h2>Aerial Hoop</h2>
+                <p>A motivational intro to Aerial Hoop lessons</p>
+                <p>Phasellus eu nisl accumsan, facilisis ante vitae, consequat purus.</p>
+                <p>Fusce consectetur, libero in interdum tincidunt, lorem dui scelerisque lectus, eget vestibulum neque lorem a eros.</p>
+            </div>
+        </article>
+        <article class='class'>
+            <div class='info'>
+                <h2>Pole Dancing</h2>
+                <p>A motivational intro to pole dancing lessons</p>
+                <p> Phasellus eu nisl accumsan, facilisis ante vitae, consequat purus.</p>
+                <p>Fusce consectetur, libero in interdum tincidunt, lorem dui scelerisque lectus, eget vestibulum neque lorem a eros.</p>
+            </div>
+            <div id='pole-image'></div>
+        </article>
+        <article class='class'>
+            <div id='silk-image'></div>
+            <div class='info'>
+                <h2>Aerial Silks</h2>
+                <p>A motivational intro to Aerial Silks lessons</p>
+                <p> Phasellus eu nisl accumsan, facilisis ante vitae, consequat purus.</p>
+                <p>Fusce consectetur, libero in interdum tincidunt, lorem dui scelerisque lectus, eget vestibulum neque lorem a eros.</p>
+            </div>
+        </article>
     </div>
 </section>
-<!-- <section id='classes'>
-    <nav>
-        <a><h2>Pole Dancing</h2><p>Beginners</p></a>
-        <a><h2>Arial Hoop</h2><p>Beginners</p></a>
-        <a><h2>Arial Silks</h2><p>Beginners</p></a>
-        <a><h2>Pole Dancing</h2><p>Advanced</p></a>
-        <a><h2>Arial Hoop</h2><p>Advanced</p></a>
-        <a><h2>Arial Silks</h2><p>Advanced</p></a>
-    </nav>
-</section> -->
-<section id='calendar'>
-    <iframe src="https://bookwhen.com/elysium-studios/iframe?start=2019-09-30" frameborder="0" scrolling="yes" seamless="seamless" style="display:block;border:none;width:100%;height:900px;"></iframe>
+<section id='booking'>
+    <iframe src="https://bookwhen.com/elysium-studios/iframe" frameborder="0" scrolling="yes" seamless="seamless" style="display:block;border:none;width:100%;height:900px;"></iframe>
 </section>
 <section id='footer'>
     <div class='contain'>

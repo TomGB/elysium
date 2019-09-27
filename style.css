@@ -1,0 +1,129 @@
+* {
+    font-family: 'Roboto', serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    text-align: center;
+}
+.contain{
+    width: 100%;
+    max-width: 78.125rem;
+    display: inline-block;
+    text-align: left;
+}
+#header {
+    padding: 0px 10px;
+    text-align: center;
+    display: block;
+}
+#title {
+    float: left;
+    padding-top: 15px
+}
+#header h1 {
+    padding-top: 10px;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+}
+#title a {
+    color: black;
+    text-decoration: none;
+}
+#header nav {
+    float: right;
+    text-align: right;
+}
+#header nav a {
+    padding: 30px 20px;
+    display: inline-block;
+    color: #444;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+#header nav a.active {
+    color: black;
+}
+#header nav a:hover {
+    background-color: #a00078;
+    color: white;
+}
+#hero {
+    padding: 50px 10px;
+    width: 100%;
+    text-align: center;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center bottom; 
+}
+#hero p{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+#footer {
+    color: white;
+    width: 100%;
+    background-color: #111111;
+    padding: 20px;
+    height: 400px;
+}
+#footer .contain {
+    vertical-align: top
+}
+#footer > div > div {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+#map, #address {
+    height: 350px;
+    padding: 10px;
+}
+#address {
+    padding: 40px;
+}
+#map > iframe {
+    width: 100%;
+    height: 100%;
+}
+.class {
+    margin: 80px 0px;
+    height: 200px;
+}
+#hoop-image {
+    background-image: url('./assets/hoop.jpeg');
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+}
+#pole-image {
+    background-image: url('./assets/pole.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+}
+#silk-image {
+    background-image: url('./assets/silk.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+    display: inline-block;
+}
+#classes .info {
+    display: inline-block;
+    width: 79%;
+    vertical-align: top;
+    padding: 20px;
+}
+#classes .contain {
+    padding: 0px 10px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 0px;
+}
