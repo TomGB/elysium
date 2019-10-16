@@ -55,7 +55,7 @@ body {
     text-align: center;
     background-image: url('./assets/background.jpg');
     background-size: cover;
-    background-position: center bottom; 
+    background-position: center bottom;
 }
 #hero p{
     color: white;
@@ -88,6 +88,12 @@ body {
     background-image: url('./assets/silk.jpg');
     background-size: cover;
     background-position: center;
+}
+#hammock-image {
+    background-image: url('./assets/silk.jpg');
+    background-size: cover;
+    background-position: center;
+    float: right;
 }
 #classes .info {
     display: inline-block;
