@@ -1,6 +1,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href='./style.css'  rel="stylesheet" type="text/css" />
+<script src='script.js'></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,7 +10,8 @@
         <div id='title'>
             <a href='./'><h1>Elysium Studios</h1></a>
         </div>
-        <nav>
+        <button id='nav-button'><div></div><div></div><div></div></button>
+        <nav id='nav'>
             <a href='./' class='active'>Welcome</a>
             <a href='./studio-hire'>Studio Hire</a>
             <a href='./gallery'>Gallery</a>
@@ -18,46 +20,108 @@
         <div style='clear: both;'></div>
     </div>
 </section>
-<section id='hero'>
-    <div class='contain'>
-        <p>Welcome to Elysium, a Huddersfield based aerial skills and pole dancing studio.</p>
-        <p>Our classes are tailored for all levels and abilities. From complete beginners to advanced.</p>
-        <p>Most importantly we focuss on making our classes enjoyable for all.</p>
+<div class='banner-container'>
+    <div class='logo-container'>
+        <img src='assets/elysium-logo/logo.png' style='max-width: 400px; max-height: 400px; max-width: 100%'>
     </div>
-</section>
+    <div class='banner-space' style='white-space: nowrap;'>
+        <div class='banner-image' style='background-image: url("assets/images/hammock.jpg")'>
+        </div><div class='banner-image' style='background-image: url("assets/images/silks.jpg")'>
+        </div><div class='banner-image' style='background-image: url("assets/images/pole.jpg")'>
+        </div><div class='banner-image' style='background-image: url("assets/images/pole2.jpg")'>
+        </div><div class='banner-image' style='background-image: url("assets/images/pole3.jpg")'>
+        </div><div class='banner-image' style='background-image: url("assets/images/silks4.jpg")'>
+        </div><div class='banner-image' style='background-image: url("assets/images/hoop9.jpg")'>
+        </div>
+    </div>
+</div>
+<div class='contain'>
+    <h2>Welcome to Elysium Aerial Arts, Fitness and Wellbeing.</h2>
+    <p>Based in the heart of Industrial Huddersfield and surrounded by the Colne Valley, with 3 large studios and a great variety of classes to help keep your mind and body healthy.</p>
+    <p>From a vigorous full body workout class to the more laid back Aerial stretch classes, there truly is something for everyone.</p>
+    <p>With our holistic approach in all our classes and a studio ethos of nurturing positive mental health as well as the physical, we believe that this will be an environment you will thrive in.</p>            
+</div>
 <section id='classes'>
     <div class='contain'>
         <article class='class'>
-            <div class='class-image' id='hoop-image'></div>
+            <div class='class-image' style='background-image: url("assets/images/hammock.jpg")'></div>
             <div class='info'>
-                <h2>Aerial Hoop</h2>
-                <p>A motivational intro to Aerial Hoop lessons</p>
-                <p>Phasellus eu nisl accumsan, facilisis ante vitae, consequat purus.</p>
-                <p>Fusce consectetur, libero in interdum tincidunt, lorem dui scelerisque lectus, eget vestibulum neque lorem a eros.</p>
+                <h2>Aerial Hammock</h2>
+                <p>With the hammocks low to the ground this is an excellent form of exercise for the complete beginner.</p>
+                <p>Being in the air takes away some of the pressure that normal stretching or floor yoga based moves can cause.</p>
+                <p>The hammock can aid in movement, strength and flexibility and allows people of all ages and abilities to feel like they have done an all over body workout.</p>
             </div>
         </article>
         <article class='class'>
-            <div class='class-image' id='pole-image'></div>
+            <div class='class-image' style='background-image: url("assets/images/poleSarah.jpg")'></div>
             <div class='info'>
                 <h2>Pole Dancing</h2>
-                <p>A motivational intro to pole dancing lessons</p>
-                <p> Phasellus eu nisl accumsan, facilisis ante vitae, consequat purus.</p>
-                <p>Fusce consectetur, libero in interdum tincidunt, lorem dui scelerisque lectus, eget vestibulum neque lorem a eros.</p>
+                <p>Pole Dancing is becoming vastly more popular around the world as a form of exercise, as a hobby and as a great confidence booster. We have a variety of Pole classes ranging from Pole Fitness to Stripper Pole.</p>
+                <p>helps build upper body strength and improve the core.</p>
+                <p>Pole is a great cardio workout which is not only fun but addictive.</p>
             </div>
         </article>
         <article class='class'>
-            <div class='class-image' id='silk-image'></div>
+            <div class='class-image' style='background-image: url("assets/images/hoop8.jpg")'></div>
+            <div class='info'>
+                <h2>Aerial Hoop</h2>
+                <p>Aerial Hoop is generally taught using a large metal hoop suspended in the air, moves are created holding, sitting and hanging on the equipment in creative dynamic sequences.</p>
+                <p>Aerial Hoop often called a Lyra truly is a full body workout and is great for your core, coordination and flexibility.</p>
+                <p>varying styles of Aerial Hoop make it accessible to everyone and promises to be a great confidence booster.</p>
+                <p>Easily one of the more prettier Aerial Arts, there will be lots of chances for you to snap a photo or two.</p>
+            </div>
+        </article>
+        <article class='class'>
+            <div class='class-image' style='background-image: url("assets/images/silks.jpg")'></div>
             <div class='info'>
                 <h2>Aerial Silks</h2>
-                <p>A motivational intro to Aerial Silks lessons</p>
-                <p> Phasellus eu nisl accumsan, facilisis ante vitae, consequat purus.</p>
-                <p>Fusce consectetur, libero in interdum tincidunt, lorem dui scelerisque lectus, eget vestibulum neque lorem a eros.</p>
+                <p>Silks uses long pieces of fabric suspended from the ceiling, in this class we teach you how to climb, invert and build strength, many moves are centred around the fabric and mostly in the air.</p>
+                <p>Silks will help develop confidence, build upper body strength, flexibility all while toning and increasing core strength.</p>
+            </div>
+        </article>
+        <article class='class'>
+            <div class='class-image' style='background-image: url("assets/images/hoop10.jpg")'></div>
+            <div class='info'>
+                <h2>Lollipop Lyra</h2>
+                <p>Lollipop Lyra is a fusion of Hoop and Pole, it’s a relatively new piece of aerial equipment and has great versatility.</p>
+                <p>On this interesting aerial apparatus you can spin, create shapes and flow beautifully.</p>
+                <p>Lollipop Lyra is a fun way to get fit, build both upper body, core strength and flexibility.</p>
+            </div>
+        </article>
+        <article class='class'>
+            <div class='class-image' style='background-image: url("assets/images/poleBook.jpg")'></div>
+            <div class='info'>
+                <h2>Private tuition</h2>
+                <p>Here at Elysium we offer 1-2-1s and 2-2-1s where you can spend time on specific moves or combos.</p>
+                <p>You can have a private in pole dance, lollipop Lyra, aerial hoop, aerial hammock, silks or any of the classes we offer here!</p>
+                <p>These sessions are a great opportunity to work on things where you need more consistent spotting or if you have set yourself some goals.</p>
+                <p>Whatever your goals we can set targets and help you achieve them.</p>
+                <p>Contact us for prices and queries about booking.</p>
+                <p>Our instructors also offer group privates if you want to organise something with friends either for a team building event or just for some fun! Get in touch to discuss ideas.</p>
+            </div>
+        </article>
+        <article class='class'>
+            <div class='class-image' style='background-image: url("assets/images/studio.jpg")'></div>
+            <div class='info'>
+                <h2>Parties</h2>
+                <p>We can organise any sort of Party you need at Elysium.</p>
+                <p>Engagement, Birthday, Hen or just a gathering of friends.</p>
+                <p>With the space we have the options are endless and we will always try to accommodate your requests.</p>
+                <p>Get in touch to find out more about what we have to offer.</p>
+            </div>
+        </article>
+        <article class='class'>
+            <div class='class-image' style='background-image: url("assets/images/silks7.jpg")'></div>
+            <div class='info'>
+                <h2>Private Hire</h2>
+                <p>From 1 studio to the whole building, anything is possible.</p>
+                <p>Please get in touch to discuss your requirements.</p>
             </div>
         </article>
     </div>
 </section>
 <section id='booking'>
-    <iframe src="https://bookwhen.com/elysium-studios/iframe" frameborder="0" scrolling="yes" seamless="seamless" style="display:block;border:none;width:100%;height:900px;"></iframe>
+    <iframe src="https://bookwhen.com/elysium-studios/iframe" frameborder="0" scrolling="yes" seamless="seamless" style="display:block;border:none;width:100%;height:1200px;"></iframe>
 </section>
 <section id='footer'>
     <div class='contain'>
@@ -65,13 +129,13 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2365.918491700641!2d-1.800609584150811!3d53.630593080039645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6f13762d7283cd77!2sLockwood%20Park!5e0!3m2!1sen!2suk!4v1569267888070!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
         <div id='address'>
-            <p>123 Something Road,</p>
-            <p>Huddersfield,</p>
-            <p>HD1 1BD</p>
+            <p>Unit 4 Albion Mill</p>
+            <p>Crow Lane</p>
+            <p>Milnsbridge</p>
+            <p>HD3 4PH</p>
             <br>
             <p>Please get in contact with us via:</p>
             <a href='mailto:info@elysiumstudios.co.uk'>info@elysiumstudios.co.uk</a>
-            <p>tel: <a href='tel:07999999999'>07999999999</a></p>
         </div>
     </div>
 <section>
