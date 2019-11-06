@@ -63,6 +63,16 @@ body {
     font-weight: bold;
 }
 
+.banner-image{
+    width: 200px;
+    height: 400px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
 .class {
     margin: 80px 0px;
     height: 200px;
