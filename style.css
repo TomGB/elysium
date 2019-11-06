@@ -21,8 +21,11 @@ body {
     display: block;
 }
 #title {
+    position: relative;
     float: left;
-    padding-top: 15px
+    padding-top: 15px;
+    width: 0px;
+    white-space: nowrap;
 }
 #header h1 {
     padding-top: 10px;
@@ -33,10 +36,13 @@ body {
 #title a {
     color: black;
     text-decoration: none;
+    width: 300px;
+    display: block;
 }
 #header nav {
     float: right;
     text-align: right;
+    width: 100%;
 }
 #header nav a {
     padding: 30px 20px;
@@ -51,6 +57,12 @@ body {
 #header nav a:hover {
     background-color: #a00078;
     color: white;
+}
+.logo-container {
+    height: 0px; display: inline-block; position: relative;
+}
+.banner-container {
+    text-align: center; height: 400px; overflow: hidden; margin-bottom: 50px; padding: 0px;
 }
 #hero {
     padding: 50px 10px;
@@ -150,14 +162,12 @@ h2 {
     #header .contain {
         padding: 0px;
     }
-    #nav-button {
-        display: block;
-    }
     #title {
         display: block;
         padding-left: 15px;
     }
     #nav-button {
+        display: block;
         float: right;
         height: 60px;
         width: 60px;
@@ -166,6 +176,7 @@ h2 {
         padding: 0;
         padding-top: 22px;
         background-color: white;
+        margin-bottom: 20px;
     }
     #nav-button div {
         width: 30px;
@@ -175,13 +186,25 @@ h2 {
         background-color: black;
         border-radius: 1px;
     }
-    /* nav {
+    nav {
         display: none;
-    } */
+    }
+    nav.show {
+        display: block;
+    }
     nav a {
         display: block;
         width: 100%;
-        text-align: left;
+        text-align: center;
+    }
+    .banner-space {
+        display: none;
+    }
+    .logo-container {
+        height: auto; display: inline-block; position: relative;
+    }
+    .banner-container {
+        text-align: center; height: auto; overflow: hidden; margin-bottom: 50px; padding: 0px;
     }
     .class {
         height: auto;
