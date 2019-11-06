@@ -13,7 +13,6 @@ body {
     text-align: left;
 }
 #header {
-    padding: 0px 10px;
     text-align: center;
     display: block;
 }
@@ -131,11 +130,51 @@ h2 {
     color: white;
 }
 
+#nav-button {
+    display: none;
+}
+
 /* body {
     background-image: url('./assets/bg.png')
 } */
 
 @media (max-width: 700px) {
+    #header .contain {
+        padding: 0px;
+    }
+    #nav-button {
+        display: block;
+    }
+    #title {
+        display: block;
+        padding-left: 15px;
+    }
+    #nav-button {
+        float: right;
+        height: 60px;
+        width: 60px;
+        margin: 0px;
+        border: 0;
+        padding: 0;
+        padding-top: 22px;
+        background-color: white;
+    }
+    #nav-button div {
+        width: 30px;
+        height: 3px;
+        margin: 6px;
+        display: block;
+        background-color: black;
+        border-radius: 1px;
+    }
+    /* nav {
+        display: none;
+    } */
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
     .class {
         height: auto;
         margin: 40px 0px;
